@@ -1,17 +1,17 @@
 //OLIOrigin Contract
-var contract_origin_address = "0x3a9c865ff25ddaa0901dd6abe68b92f7a6b151fe";
+var contract_origin_address = "0x89186985a701dec652a8e324092bdec89f910168";
 var contract_origin_abi = [{"constant":true,"inputs":[{"name":"_account","type":"address"}],"name":"get_oliType","outputs":[{"name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"_account","type":"address"}],"name":"get_oliCkt","outputs":[{"name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"kill","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"_account","type":"address"}],"name":"get_oliTrafoid","outputs":[{"name":"","type":"uint32"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"_tid","type":"uint32"}],"name":"get_gsoAddr","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"_account","type":"address"},{"name":"_index","type":"uint8"}],"name":"get_oliPeakLoad","outputs":[{"name":"","type":"uint16"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"oli","type":"address"},{"name":"lat","type":"uint32"},{"name":"long","type":"uint32"},{"name":"trafo","type":"uint32"},{"name":"ckt","type":"uint8"},{"name":"typex","type":"uint8"},{"name":"pload","type":"uint16[]"}],"name":"addOli","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"anonymous":false,"inputs":[{"indexed":false,"name":"paymentAddress","type":"address"},{"indexed":false,"name":"latOfLocation","type":"uint32"},{"indexed":false,"name":"longOfLocation","type":"uint32"}],"name":"newAddedOli","type":"event"}];
 //OLICOin contract
-var contract_Coin_address = "0xdb0f919b72c20948e6c6c06c1280c7aed3a48b51";
+var contract_Coin_address = "0xd26a4caf722a51b7a1f7bce464fbee893bac656e";
 var contract_Coin_abi = [{"constant":false,"inputs":[],"name":"kill","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"caddress","type":"address"}],"name":"get_coinBalance","outputs":[{"name":"","type":"int32"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_contract","type":"address"},{"name":"_tf","type":"bool"}],"name":"set_ContractAddress","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_account","type":"address"},{"name":"_change","type":"int32"}],"name":"set_OliCoinBalance","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_to","type":"address"},{"name":"_amount","type":"uint16"}],"name":"transfer","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"anonymous":false,"inputs":[{"indexed":true,"name":"_from","type":"address"},{"indexed":true,"name":"_to","type":"address"},{"indexed":false,"name":"_value","type":"uint16"}],"name":"Transfer","type":"event"}];
 //OLIDaughter contract
-var contract_daughter_address = "0xced60ac716aabcc6ee9aff2d0982cb5e29371d51";
+var contract_daughter_address = "0x5abbfea67085dd927ec59be9af871b4935c07656";
 var contract_daughter_abi = [{"constant":false,"inputs":[{"name":"addr","type":"address"}],"name":"setOliOrigin","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_amount","type":"uint16"},{"name":"_rate","type":"uint8"}],"name":"bid","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"addr","type":"address"}],"name":"setBilateralTrading","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"addr","type":"address"}],"name":"setOliCoin","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"addr","type":"address"}],"name":"setDynamicGridFee","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"kill","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"resett","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"get_producer","outputs":[{"name":"","type":"address[]"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"_rate","type":"uint8"}],"name":"get_sRate","outputs":[{"name":"","type":"uint16"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"get_consumer","outputs":[{"name":"","type":"address[]"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"_rate","type":"uint8"}],"name":"get_dRate","outputs":[{"name":"","type":"uint16"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"maxRate","outputs":[{"name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"breakEven","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"name":"gaddr","type":"address"},{"indexed":false,"name":"grate","type":"uint8"},{"indexed":false,"name":"gamount","type":"uint16"}],"name":"NewGenBid","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"caddr","type":"address"},{"indexed":false,"name":"crate","type":"uint8"},{"indexed":false,"name":"camount","type":"uint16"}],"name":"NewConBid","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"cbid","type":"uint8"}],"name":"NewMcp","type":"event"}];
 //Bilateral Trade contract
-var contract_bilateral_address = "0x1304209854905c947f2ce1140eac577301c1baee";
+var contract_bilateral_address = "0xe5bc550134b298f0f5bfba8dab90eded2c028e9f";
 var contract_bilateral_abi = [{"constant":false,"inputs":[{"name":"addr","type":"address"}],"name":"setOliOrigin","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_stock","type":"address"},{"name":"_rate","type":"uint8"}],"name":"stockBidding","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"_stock","type":"address"}],"name":"get_stockAmount","outputs":[{"name":"","type":"uint16"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"kill","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_amount","type":"uint16"},{"name":"_rate","type":"uint8"},{"name":"_period","type":"uint32"},{"name":"_btime","type":"uint32"}],"name":"regStock","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"_stock","type":"address"}],"name":"get_stockBidder","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"_stock","type":"address"}],"name":"get_stockRate","outputs":[{"name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"anonymous":false,"inputs":[{"indexed":false,"name":"saccount","type":"address"},{"indexed":false,"name":"samount","type":"uint16"},{"indexed":false,"name":"smrate","type":"uint8"},{"indexed":false,"name":"speriod","type":"uint32"},{"indexed":false,"name":"sbiddingTime","type":"uint32"}],"name":"NewStock","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"baccount","type":"address"},{"indexed":false,"name":"bmrate","type":"uint8"}],"name":"NewStockBid","type":"event"}];
 //Grid Fee Contract
-var contract_gridFee_address = "0x46bfeab0556ac1ae91c60f302d146712b9df50b4";
+var contract_gridFee_address = "0xeccf7aba2e15e92cd91eaaf222399393a528560d";
 var contract_gridFee_abi = [{"constant":true,"inputs":[{"name":"_tid","type":"uint32"},{"name":"_index","type":"uint8"}],"name":"get_gridFee","outputs":[{"name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_addr","type":"address"},{"name":"_amount","type":"uint16"}],"name":"set_trafocamount","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"addr","type":"address"}],"name":"setOliOrigin","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_addr","type":"address"},{"name":"_amount","type":"uint16"}],"name":"set_cktcamount","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"kill","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_tid","type":"uint32"}],"name":"set_tgridFee","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"_tid","type":"uint32"},{"name":"_index","type":"uint8"}],"name":"get_cktAmount","outputs":[{"name":"","type":"int16"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"_addr","type":"address"}],"name":"get_tGFee","outputs":[{"name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_address","type":"address"},{"name":"_fee","type":"uint8[]"}],"name":"set_minmaxgfee","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_addr","type":"address"},{"name":"_amount","type":"uint16"}],"name":"set_traforamount","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"_addr","type":"address"}],"name":"get_dGFee","outputs":[{"name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_tid","type":"uint32"}],"name":"set_dgridFee","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_addr","type":"address"},{"name":"_amount","type":"uint64"}],"name":"set_cktramount","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"_addr","type":"address"}],"name":"get_trafoAmount","outputs":[{"name":"","type":"int16"}],"payable":false,"stateMutability":"view","type":"function"}];
 if (typeof web3 !== 'undefined') {
   web3 = new Web3(web3.currentProvider);
@@ -645,33 +645,63 @@ function timeConverter(UNIX_timestamp) {
 };
 
 var tmpCnt = 0;
-setInterval(function () {
-
-  tmpCnt += 1;
-  var blockTimestamp = web3.eth.getBlock('latest').timestamp;
-  var peerCount = web3.net.peerCount;
-  var latestBlockHash = web3.eth.getBlock('latest').hash;
-  var blockNumber = web3.eth.blockNumber;
-  var transactionLength = web3.eth.getBlock('latest').transactions.length;
-  var blockSize = (web3.eth.getBlock('latest').size) / 1000;
-  var gasUsed = (web3.eth.getBlock('latest').gasUsed) / 1000000;
-  gasUsed = gasUsed.toFixed(2);
-
-  document.getElementById('console').innerHTML = document.getElementById('console1').innerHTML;
-  document.getElementById('console1').innerHTML = document.getElementById('console2').innerHTML;
-  document.getElementById('console2').innerHTML = document.getElementById('console3').innerHTML;
-  document.getElementById('console3').innerHTML = document.getElementById('console4').innerHTML;
-
-  if (tmpCnt < 4) {
-    document.getElementById('console4').innerHTML = 'Block Info: ' + timeConverter(blockTimestamp) + ' Imported ' + '#' + blockNumber + ' ' +
-      latestBlockHash.slice(0, 4) + '...' + latestBlockHash.slice(-4) + ' ' + '( ' + transactionLength +
-      ' txs, ' + blockSize + ' kiB ' + gasUsed + ' Mgas' + ' )';
-  } else {
-    document.getElementById('console4').innerHTML = 'Peer Info: ' + peerCount + '/25 peers';
-    tmpCnt = 0;
-  }
-
-}, 3000);
+function updateTimestamp() {
+  return new Promise(function (resolve, reject) {
+    tmpCnt += 1;
+    web3.eth.getBlock('latest', false, function (error, result) {
+      if (error) {
+        reject(error);
+      } else {
+        resolve(result);
+      }
+    });
+  }).then(function (result) {    
+    if (tmpCnt < 4) {
+      return new Promise(function (resolve, reject) {
+        web3.eth.getBlockNumber(function (error, result) {
+          if (error) {
+            reject(error);
+          } else {
+            resolve(result);
+          }
+        });
+      }).then(function (blockNumber) {
+        var blockTimestamp = result.timestamp;
+        var latestBlockHash = result.hash;
+        var transactionLength = result.transactions.length;
+        var blockSize = result.size / 1000;
+        var gasUsed = result.gasUsed / 1000000;
+        gasUsed = gasUsed.toFixed(2);
+            return 'Block Info: ' + timeConverter(blockTimestamp) + ' Imported ' + '#' + blockNumber + ' ' +
+          latestBlockHash.slice(0, 4) + '...' + latestBlockHash.slice(-4) + ' ' + '( ' + transactionLength +
+          ' txs, ' + blockSize + ' kiB ' + gasUsed + ' Mgas' + ' )';
+      });
+    } else {
+      return new Promise(function (resolve, reject) {
+        web3.net.getPeerCount(function (error, result) {
+          if (error) {
+            reject(error);
+          } else {
+            resolve(result);
+          }
+        });
+      }).then(function (peerCount) {
+        tmpCnt = 0;
+        return 'Peer Info: ' + peerCount + '/25 peers';
+      });
+    }
+  }).then(function (message) {
+    document.getElementById('console').innerHTML = document.getElementById('console1').innerHTML;
+    document.getElementById('console1').innerHTML = document.getElementById('console2').innerHTML;
+    document.getElementById('console2').innerHTML = document.getElementById('console3').innerHTML;
+    document.getElementById('console3').innerHTML = document.getElementById('console4').innerHTML;
+    document.getElementById('console4').innerHTML = message;
+  }).then(function () {
+    return new Promise(function (resolve, reject) {
+      setTimeout(resolve, 3000);
+    });
+  }).then(updateTimestamp);
+}
 
 // windows onload functions
 function start() {
@@ -680,5 +710,10 @@ function start() {
   watchcbid();
   oliClock.startClock();
   watchMCP();
+  updateTimestamp().catch(function (error) {
+    setTimeout(function () {
+      throw error;
+    });
+  });
 }
 window.onload = start;
